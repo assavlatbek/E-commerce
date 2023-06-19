@@ -4,21 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Savlatbek best E-commerce" />
-    <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./css/pages/home.css" />
     <title>E-commerce - HOME</title>
   </head>
   <body>
+    <div class="header">
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
+    <div class="loader-parent">
+      <div class="loader"></div>
+    </div>
     <nav>
       <div class="container">
         <div class="logo">
           <img src="./assits/svg/logo.svg" alt="" />
+          <h1>Северяночка</h1>
         </div>
         <div class="navigations">
           <div class="nav-toggler">
-            <button class="btn-success btn-nav-toggle"></button>
+            <button class="btn-success btn btn-nav-toggle">
+              <svg
+                height="32px"
+                id="Layer_1"
+                style="enable-background: new 0 0 32 32"
+                version="1.1"
+                viewBox="0 0 32 32"
+                width="32px"
+                fill="#fff"
+                xml:space="preserve"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z"
+                />
+              </svg>
+              <p>Каталог</p>
+            </button>
           </div>
-          <div class="nav-item">
+
+          <div class="nav-item hide">
+            <button class="btn btn-danger close-btn">&times;</button>
             <a href="" class="nav-link">Home</a>
             <a href="" class="nav-link">About</a>
             <a href="" class="nav-link">Esmas</a>
@@ -33,12 +61,199 @@
             <img src="./assits/svg/search-icon.svg" alt="" />
           </div>
           <div class="link-case">
-            <img src="" alt="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              fill="var(--dark-color)"
+              class="bi bi-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+            <p>Избранное</p>
           </div>
-          <div class="link-case"></div>
-          <div class="link-case"></div>
+          <div class="link-case">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              fill="var(--dark-color)"
+              class="bi bi-box"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"
+              />
+            </svg>
+            <p>продукты</p>
+          </div>
+          <div class="link-case">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              fill="var(--dark-color)"
+              fill="currentColor"
+              class="bi bi-cart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              />
+            </svg>
+            <p>Корзина</p>
+          </div>
+          <div class="login-case">
+            <div>
+              <img src="./assits/svg/avatar.svg" alt="" />
+              <p>A. Savlatbek</p>
+            </div>
+            <div>
+              <svg
+                fill="#000000"
+                height="15px"
+                width="15px"
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 330 330"
+                xml:space="preserve"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    id="XMLID_225_"
+                    d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
+    <footerNav>
+      <div class="container01">
+        <div class="pa">
+          <div class="navigations">
+            <div class="nav-toggler">
+              <button class="btn-nav-toggle">
+                <svg
+                  height="22px"
+                  id="Layer_1"
+                  style="enable-background: new 0 0 22 22"
+                  version="1.1"
+                  viewBox="0 0 32 32"
+                  width="22px"
+                  fill="#000"
+                  xml:space="preserve"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <path
+                    d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2 s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2 S29.104,22,28,22z"
+                  />
+                </svg>
+                <p>Каталог</p>
+              </button>
+            </div>
+
+            <div class="nav-item hide">
+              <button class="btn btn-danger close-btn">&times;</button>
+              <a href="" class="nav-link">Home</a>
+              <a href="" class="nav-link">About</a>
+              <a href="" class="nav-link">Esmas</a>
+              <a href="" class="nav-link">Opasy</a>
+              <a href="" class="nav-link">Maloi</a>
+              <a href="" class="nav-link">Savlatbek</a>
+            </div>
+          </div>
+          <div class="link-case">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              fill="var(--dark-color)"
+              class="bi bi-heart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+              />
+            </svg>
+            <p>Избранное</p>
+          </div>
+          <div class="link-case">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              fill="var(--dark-color)"
+              class="bi bi-box"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"
+              />
+            </svg>
+            <p>продукты</p>
+          </div>
+          <div class="link-case">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="23"
+              height="23"
+              fill="var(--dark-color)"
+              fill="currentColor"
+              class="bi bi-cart"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+              />
+            </svg>
+            <p>Корзина</p>
+          </div>
+          <div class="login-case">
+            <img src="./assits/svg/avatar.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </footerNav>
+    <div class="clr"></div>
+    <main class="main" id="main">
+      <div class="container">
+        <div class="d-flex">
+          <img src="./assits/png, jpg/fruit.png" alt="" />
+          <h1 class="home-title">Доставка бесплатно от 1000 ₽</h1>
+        </div>
+      </div>
+    </main>
+    <section class="location" id="location">
+      <div class="container">
+        <h1 class="title">Наши магазины</h1>
+        <br />
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.0730692531183!2d69.20123767511238!3d41.28551417131289!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1sen!2s!4v1687159835754!5m2!1sen!2s"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <script src="./js/confitte.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
