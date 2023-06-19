@@ -30,7 +30,7 @@ close_btn.forEach((btn) => {
 // Shrink
 
 document.addEventListener("scroll", () => {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 90) {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     nav.classList.add("shrink");
   } else {
     nav.classList.remove("shrink");
@@ -62,6 +62,7 @@ window.addEventListener("scroll", (event) => {
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight,
     scrolled = (winScroll / height) * 100;
-  document.getElementById("progressBar").style.width = scrolled + "%";
-  document.getElementById("progressBar").style.width += "76px";
+  document.getElementById("progressBar").style.width = `calc(${
+    scrolled + "%"
+  } + 66px`;
 });
