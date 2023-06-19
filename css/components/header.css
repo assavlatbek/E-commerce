@@ -10,7 +10,7 @@ nav {
   backdrop-filter: blur(10px);
   top: 0;
 }
-footerNav {
+.footer-nav {
   display: none;
 }
 .close-btn {
@@ -156,7 +156,7 @@ nav .login-case {
   nav .navigations {
     display: none;
   }
-  footerNav {
+  .footer-nav {
     display: flex;
     justify-content: center;
     background: #ffffff;
@@ -170,10 +170,10 @@ nav .login-case {
     left: 0;
     right: 0;
   }
-  footerNav * {
+  .footer-nav * {
     align-items: center;
   }
-  footerNav .pa {
+  .footer-nav .pa {
     display: flex;
     width: 100%;
   }
@@ -185,11 +185,11 @@ nav .login-case {
   .link-case * {
     font-size: small;
   }
-  footerNav .navigations,
-  footerNav .login-case {
+  .footer-nav .navigations,
+  .footer-nav .login-case {
     margin: 0 10px;
   }
-  footerNav .btn-nav-toggle {
+  .footer-nav .btn-nav-toggle {
     background: transparent;
     color: #000 !important;
     border: none;
