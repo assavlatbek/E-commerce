@@ -98,14 +98,15 @@ nav .link-case {
 nav .login-case {
   display: flex !important;
   margin: 0 0 0 20px;
-  gap: 20px;
+  gap: 10px;
+  text-decoration: none;
+  color: #000;
   justify-content: space-between;
   align-items: center;
 }
 .login-case div {
   display: flex;
   align-items: center;
-  gap: 5px;
 }
 
 .shrink {
@@ -184,6 +185,9 @@ nav .login-case {
   padding: 10px 20px;
   margin-bottom: 0;
 }
+.img-file {
+  border-radius: 50% !important;
+}
 .openModal {
   top: 0 !important;
 }
@@ -200,6 +204,7 @@ nav .login-case {
 .login-case h3 {
   font-weight: 400;
 }
+
 @media (max-width: 1188px) {
   nav {
     gap: 10px;

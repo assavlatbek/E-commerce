@@ -6,6 +6,15 @@ let lastName = document.querySelector(".lastName");
 let loginBtn = document.querySelector(".login-btn");
 let profil_picture = document.querySelector(".img-file");
 let login_case = document.querySelectorAll(".login-case");
+var imgCode;
+
+const imgUpload = (e) => {
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    imgCode = reader.result;
+  });
+  reader.readAsDataURL(profil_picture.files[0]);
+};
 
 function openModal() {
   modal.classList.add("openModal");
@@ -25,21 +34,31 @@ loginBtn.addEventListener("click", function () {
   if (firstName.value.length <= 2 || lastName.value.length <= 2) {
     alert("Please fill the fields ❌");
   } else {
-    const profil_picture01 = profil_picture.files[0];
-    const imageUrl = URL.createObjectURL(profil_picture01);
+    let date = new Date().toJSON().slice(0, 10);
     localStorage.setItem("firstName", firstName.value);
     localStorage.setItem("lastName", lastName.value);
-    localStorage.setItem("avatar", imageUrl);
+    localStorage.setItem("avatar", imgCode);
     localStorage.setItem("isLogined", true);
+    localStorage.setItem("date", date);
+
     closeModal();
     alert("You are logged in ✅");
+    document.location.reload();
   }
 });
 
 if (localStorage.getItem("isLogined")) {
   login_case.forEach((el) => {
     el.innerHTML = `
-    <img src="${localStorage.getItem("avatar")}" width="50px" height="50px" alt="avatar">
-    <h3>${localStorage.getItem("firstName")}</h3>`;
+    <a class="login-case" href="../pages/settings.html">
+    <img src="${localStorage.getItem(
+      "avatar"
+    )}" style="height: 50px; width: 50px; border-radius: 50%" alt="avatar">
+    <h3>${localStorage.getItem("lastName").charAt(0)}. ${localStorage.getItem(
+      "firstName"
+    )}</h3>
+    </a>
+    `;
   });
+  login_case.href = "../pages/settings.html";
 }

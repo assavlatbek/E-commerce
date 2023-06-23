@@ -1,0 +1,100 @@
+@import url("../index.css");
+@import url("../components/button.css");
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0 10px;
+  width: 80%;
+  background: #ff0000;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0 10px;
+  width: 20%;
+  height: 100vh !important;
+  background: #000;
+  height: 60px;
+  color: #fff;
+}
+main {
+  position: fixed;
+  top: 60px;
+  width: 80%;
+  padding: 40px;
+  color: #fff;
+  background: #00ff08;
+  height: 100vh;
+  right: 0;
+}
+aside .div-title {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #835d5d;
+  width: 100%;
+}
+.bottom {
+  position: absolute !important;
+  bottom: 10px;
+}
+.main-row {
+  width: 90%;
+  display: flex;
+}
+.sidebar-btn {
+  background: #9a9a9a;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+.sidebar-btn h1 {
+  border: 1px solid #7a7a7a;
+  border-radius: 5px 0 0 5px;
+  padding: 10px 20px;
+}
+.sidebar-content {
+  background: #9a9a9a;
+  border: 1px solid #7a7a7a;
+  padding: 5px 10px;
+  border-radius: 0 5px 5px 0;
+}
+.info-settings * {
+  margin: 5px 0;
+}
+.page {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  margin-top: 10px !important;
+}
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  aside {
+    width: 30%;
+  }
+  main,
+  header {
+    width: 70%;
+    right: 0;
+    padding: 20px;
+  }
+  .main-row {
+    width: 100%;
+  }
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}

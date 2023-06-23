@@ -12,7 +12,6 @@
     <title>E-commerce - HOME</title>
   </head>
   <body>
-    <ul class="notifications"></ul>
     <div class="header">
       <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
@@ -41,6 +40,7 @@
         />
         <label for="img" class="upload-btn">Choose Your Image</label>
         <input
+          onchange="imgUpload()"
           type="file"
           placeholder="Your Image"
           class="img-file"
@@ -228,9 +228,9 @@
             </svg>
             <p>Корзина</p>
           </div>
-          <div class="login-case">
+          <a href="./pages/settings.html" class="login-case">
             <button class="btn btn-success open-modal-btn">login</button>
-          </div>
+          </a>
         </div>
       </div>
     </div>
