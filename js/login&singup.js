@@ -53,7 +53,7 @@ if (localStorage.getItem("isLogined")) {
     <a class="login-case" href="../pages/settings.html">
     <img src="${localStorage.getItem(
       "avatar"
-    )}" style="height: 50px; width: 50px; border-radius: 50%" alt="avatar">
+    )}" style="height: 45px; width: 45px; border-radius: 50%" alt="avatar">
     <h3>${localStorage.getItem("lastName").charAt(0)}. ${localStorage.getItem(
       "firstName"
     )}</h3>
