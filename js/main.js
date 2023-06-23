@@ -1,3 +1,5 @@
+// Important
+
 // Loader
 let loader = document.querySelector(".loader-parent");
 

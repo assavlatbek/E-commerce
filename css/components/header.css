@@ -113,6 +113,93 @@ nav .login-case {
   backdrop-filter: blur(15px) !important;
 }
 
+.modal {
+  transition: 1s all;
+  width: 100% !important;
+  height: 100vh !important;
+  position: fixed;
+  padding: 0 10px !important;
+  top: -1000px;
+  background: #fcdec8ca;
+  z-index: 9999999999999999;
+  overflow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background: #ffffff;
+  z-index: 99999999999999999;
+  color: #000000;
+  width: 400px;
+  padding: 40px;
+}
+.modal * {
+  transition: 0.5s all;
+}
+.modal-container label {
+  display: block;
+  color: #8f8f8f;
+  margin: 10px 0;
+  font-size: 20px;
+}
+.modal-container input {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid var(--succes-color);
+}
+.modal-container input:focus {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.modal-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.modal-container .login-btn {
+  background: #fcd5ba;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #f63;
+  border-bottom: 4px;
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+}
+.modal-container .login-btn:hover {
+  letter-spacing: 3px;
+}
+.modal-container input[type="file"] {
+  display: none;
+}
+.modal-container .upload-btn {
+  background: var(--succes-color);
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-bottom: 0;
+}
+.openModal {
+  top: 0 !important;
+}
+.close-modal-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  padding: 3px 10px !important;
+  font-size: 30px !important;
+  background: #ff0000 !important;
+  color: #fff !important;
+}
+.login-case h3 {
+  font-weight: 400;
+}
 @media (max-width: 1188px) {
   nav {
     gap: 10px;
@@ -196,5 +283,9 @@ nav .login-case {
   }
   nav .login-case {
     display: none !important;
+  }
+  .login-case h3 {
+    font-weight: 500;
+    display: none;
   }
 }
