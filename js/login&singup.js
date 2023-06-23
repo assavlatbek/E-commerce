@@ -60,5 +60,4 @@ if (localStorage.getItem("isLogined")) {
     </a>
     `;
   });
-  login_case.href = "../pages/settings.html";
 }
