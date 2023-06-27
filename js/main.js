@@ -1,6 +1,7 @@
 // Important
 
 // Loader
+
 let loader = document.querySelector(".loader-parent");
 
 loader.classList.add("hidding");
@@ -32,7 +33,7 @@ close_btn.forEach((btn) => {
 // Shrink
 
 document.addEventListener("scroll", () => {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     nav.classList.add("shrink");
   } else {
     nav.classList.remove("shrink");

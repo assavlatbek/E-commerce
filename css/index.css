@@ -46,6 +46,14 @@ section {
   color: var(--dark-color);
 }
 
+.my-5 {
+  margin: 20px 0;
+}
+
+.bg-success {
+  background-color: var(--succes-color) !important;
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 0 10px;
