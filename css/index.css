@@ -4,6 +4,7 @@
   --dark-color: #414141;
   --succes-color: #70c05b;
   --danger-color: #ff6633;
+  --primary-color: #0055ff;
 }
 
 * {
@@ -47,11 +48,15 @@ section {
 }
 
 .my-5 {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
 .bg-success {
   background-color: var(--succes-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color) !important;
 }
 
 @media (max-width: 480px) {
